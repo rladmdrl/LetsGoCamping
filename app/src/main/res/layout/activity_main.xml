@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
  <TextView
@@ -20,19 +21,85 @@
         android:layout_height="210dp"
         android:layout_below="@+id/tv"
         android:background="@drawable/tkwls"/>
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:id="@+id/iv_rjator"
-        android:layout_below="@+id/iv"
-        android:background="@drawable/dkqdp"/>
-    <EditText
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/iv"
-        android:layout_toRightOf="@+id/iv_rjator"
-        android:background="@drawable/rjatorckds"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/iv_rjator"
+            android:layout_below="@+id/iv"
+            android:background="@drawable/dkqdp"/>
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/iv"
+            android:layout_toRightOf="@+id/iv_rjator"
+            android:background="@drawable/rjatorckds"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="#F0F0F0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="캠핑장"
+            android:paddingRight="16dp"
+            android:onClick="Camping"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음식점"
+            android:onClick="restaurant"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="용품점"
+            android:onClick="SuppliesStore"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장"
+            android:onClick="parkingLot"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
 
 
-</RelativeLayout>
+
+
+
+
+</LinearLayout>
