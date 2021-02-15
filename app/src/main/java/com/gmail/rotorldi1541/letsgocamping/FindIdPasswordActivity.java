@@ -20,7 +20,7 @@ public class FindIdPasswordActivity extends AppCompatActivity {
     }
 
     public void FindIn(View view) {
-        Intent intent=new Intent(this,IdFindActivity.class);
+        Intent intent=new Intent(this,idFdActivity.class);
         startActivity(intent);
     }
 
