@@ -10,14 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsGoCamping">
         <activity android:name=".PassdActivity"></activity>
-        <activity android:name=".idFdActivity" />
+
         <activity android:name=".ghldnjsActivity" />
-        <activity android:name=".IogActivity" />
-        <activity android:name=".PasswordActivity" />
-        <activity android:name=".IdFindActivity" />
+
+
+
         <activity android:name=".FindIdPasswordActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".SecondActivity">
+
+        <activity android:name=".idFdActivity"/>
+            <activity android:name=".IogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

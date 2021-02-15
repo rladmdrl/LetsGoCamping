@@ -14,10 +14,10 @@
         android:textSize="46dp"
         android:gravity="center"
         android:textStyle="bold"/>
-   <ListView
-       android:layout_width="match_parent"
-       android:layout_height="260dp"
-       android:layout_below="@+id/tv_id_ahr"/>
+<!--   <ListView-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="260dp"-->
+<!--       android:layout_below="@+id/tv_id_ahr"/>-->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
