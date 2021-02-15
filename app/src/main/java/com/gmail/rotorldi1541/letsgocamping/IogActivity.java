@@ -22,9 +22,13 @@ public class IogActivity extends AppCompatActivity {
 
     public void djqfhem(View view) {
         //회원가입
+        Intent intent=new Intent(this,ghldnjsActivity.class);
+        startActivity(intent);
     }
 
     public void main(View view) {
         //메인가기
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }
