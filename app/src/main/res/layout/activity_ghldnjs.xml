@@ -26,6 +26,7 @@
         android:layout_marginTop="22dp"
         android:textSize="24sp"/>
     <EditText
+        android:id="@+id/et_name"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_toRightOf="@+id/tv_02"
@@ -44,6 +45,7 @@
         android:layout_marginTop="22dp"
         android:textSize="24sp"/>
     <EditText
+        android:id="@+id/et_num"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_toRightOf="@+id/tv_02"
@@ -62,6 +64,7 @@
         android:layout_marginTop="22dp"
         android:textSize="24sp"/>
     <EditText
+        android:id="@+id/et_eme"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_toRightOf="@+id/tv_02"
@@ -80,6 +83,7 @@
         android:layout_marginTop="22dp"
         android:textSize="24sp"/>
     <EditText
+        android:id="@+id/et_id"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_toRightOf="@+id/tv_02"
@@ -98,6 +102,7 @@
         android:layout_marginTop="22dp"
         android:textSize="24sp"/>
     <EditText
+        android:id="@+id/et_pass1"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_toRightOf="@+id/tv_02"
@@ -116,6 +121,7 @@
         android:layout_marginTop="22dp"
         android:textSize="24sp"/>
     <EditText
+        android:id="@+id/et_pass2"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_toRightOf="@+id/tv_02"
