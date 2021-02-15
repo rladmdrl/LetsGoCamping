@@ -25,7 +25,7 @@ public class FindIdPasswordActivity extends AppCompatActivity {
     }
 
     public void PasswordSetUp(View view) {
-        Intent intent=new Intent(this,PasswordActivity.class);
+        Intent intent=new Intent(this,PassdActivity.class);
         startActivity(intent);
     }
 }
