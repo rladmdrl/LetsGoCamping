@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.gmail.rotorldi1541.letsgocamping"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -39,4 +39,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation platform('com.google.firebase:firebase-bom:26.5.0')
+
+    implementation "com.kakao.sdk:v2-user:2.3.0" // 카카오 로그인
 }
