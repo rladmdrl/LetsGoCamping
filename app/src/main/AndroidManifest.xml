@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.rotorldi1541.letsgocamping">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".KakaApplication"
@@ -11,16 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsGoCamping">
-        <activity android:name=".PassdActivity"></activity>
-
+        <activity android:name=".PostActivityt"></activity>
+        <activity android:name=".PassdActivity" />
         <activity android:name=".ghldnjsActivity" />
-
-
-
         <activity android:name=".FindIdPasswordActivity" />
-
-        <activity android:name=".idFdActivity"/>
-            <activity android:name=".IogActivity">
+        <activity android:name=".idFdActivity" />
+        <activity android:name=".IogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,16 +26,18 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
-            <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
-            <data android:host="oauth"
-                android:scheme="kakaobf854dfe7fc7995bac8d4b9687096e55" />
-        </intent-filter>
-    </activity>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakaobf854dfe7fc7995bac8d4b9687096e55" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

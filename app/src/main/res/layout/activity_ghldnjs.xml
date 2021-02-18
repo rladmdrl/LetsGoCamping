@@ -29,6 +29,7 @@
         android:id="@+id/et_name"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/tv_02"
         android:layout_below="@id/tv_01"
         android:layout_marginLeft="100dp"
@@ -48,10 +49,12 @@
         android:id="@+id/et_num"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/tv_02"
         android:layout_below="@id/tv_02"
         android:layout_marginLeft="100dp"
         android:background="@drawable/bg_text"
+        android:inputType="number"
         android:layout_marginTop="16dp"/>
     <TextView
         android:id="@+id/tv_04"
@@ -67,11 +70,13 @@
         android:id="@+id/et_eme"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/tv_02"
         android:layout_below="@id/tv_03"
         android:layout_marginLeft="100dp"
         android:background="@drawable/bg_text"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:inputType="textEmailAddress"/>
     <TextView
         android:id="@+id/tv_05"
         android:layout_width="100dp"
@@ -86,6 +91,7 @@
         android:id="@+id/et_id"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/tv_02"
         android:layout_below="@id/tv_04"
         android:layout_marginLeft="100dp"
@@ -105,10 +111,12 @@
         android:id="@+id/et_pass1"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/tv_02"
         android:layout_below="@id/tv_05"
         android:layout_marginLeft="100dp"
         android:background="@drawable/bg_text"
+        android:inputType="textPassword"
         android:layout_marginTop="16dp"/>
     <TextView
         android:id="@+id/tv_07"
@@ -124,9 +132,11 @@
         android:id="@+id/et_pass2"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/tv_02"
         android:layout_below="@id/tv_06"
         android:layout_marginLeft="100dp"
+        android:inputType="textPassword"
         android:background="@drawable/bg_text"
         android:layout_marginTop="16dp"/>
     <Button

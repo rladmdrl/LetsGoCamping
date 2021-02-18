@@ -32,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/iv1"
+        android:paddingLeft="8dp"
         android:layout_toRightOf="@+id/iv_01"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_text"/>
@@ -48,6 +49,8 @@
         android:layout_below="@+id/iv_01"
         android:layout_toRightOf="@+id/iv_02"
         android:layout_marginTop="16dp"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
         android:background="@drawable/bg_text"/>
     <Button
         android:id="@+id/btn01"
