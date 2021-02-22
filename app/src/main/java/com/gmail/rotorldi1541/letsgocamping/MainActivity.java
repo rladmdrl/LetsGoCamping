@@ -1,6 +1,7 @@
 package com.gmail.rotorldi1541.letsgocamping;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -14,10 +15,12 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     MainAdapter adapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         datas.add(new MainData(R.drawable.tkwls,"산속","산속어느곳 풍경멋있네"));
         datas.add(new MainData(R.drawable.tkwls,"물속","물속어느곳 숨막혀"));
@@ -25,12 +28,17 @@ public class MainActivity extends AppCompatActivity {
         datas.add(new MainData(R.drawable.tkwls,"용암","용암 녹는다~~~~"));
         recyclerView=findViewById(R.id.recycler);
         adapter=new MainAdapter(this,datas);
+
         recyclerView.setAdapter(adapter);
 
+        LinearLayoutManager layoutManager=new LinearLayoutManager(recyclerView.getContext());
+
+        recyclerView.setLayoutManager(layoutManager);
 
 
 
     }
+
 
     public void Camping(View view) {
         //캠핑장
@@ -40,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add(new MainData(R.drawable.tkwls,"하늘","하늘위 바람시원하네"));
         datas.add(new MainData(R.drawable.tkwls,"용암","용암 녹는다~~~~"));
         adapter.notifyDataSetChanged();
+
     }
 
     public void restaurant(View view) {

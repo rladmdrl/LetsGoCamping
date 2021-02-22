@@ -10,7 +10,7 @@
         android:id="@+id/ivi"
         android:layout_width="match_parent"
         android:layout_height="248dp"
-        android:background="@drawable/tkwls"/>
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/tv_title"

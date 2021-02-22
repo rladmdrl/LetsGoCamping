@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.VH> {
@@ -60,7 +61,16 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.VH> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                        int pos=getAdapterPosition();
+                        if (pos!=RecyclerView.NO_POSITION){
+                            Intent intent=new Intent(context,PostActivityt.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
+                            intent.putExtra("img", datas.get(pos).getImg());
+                            intent.putExtra("title",datas.get(pos).getTitle());
+                            intent.putExtra("mag",datas.get(pos).getMag());
+
+                            context.startActivities(new Intent[]{intent});
+                        }
                     }
 
             });

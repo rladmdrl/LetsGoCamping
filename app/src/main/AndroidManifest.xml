@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsGoCamping">
-        <activity android:name=".OnClickActivity"></activity>
         <activity android:name=".PostActivityt" />
         <activity android:name=".PassdActivity" />
         <activity android:name=".ghldnjsActivity" />
