@@ -35,8 +35,13 @@
             android:layout_width="220dp"
             android:layout_height="60dp"
             android:layout_below="@+id/iv"
+            android:inputType="text"
+            android:text="sd"
+            android:paddingLeft="8dp"
+
             android:layout_toRightOf="@+id/iv_rjator"
             android:background="@drawable/rjatorckds"/>
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
