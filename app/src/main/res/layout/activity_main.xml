@@ -25,22 +25,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:id="@+id/iv_rjator"
-            android:layout_below="@+id/iv"
-            android:background="@drawable/dkqdp"/>
-        <EditText
-            android:layout_width="220dp"
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="260dp"
             android:layout_height="60dp"
             android:layout_below="@+id/iv"
             android:inputType="text"
             android:text="sd"
+            app:iconifiedByDefault="true"
             android:paddingLeft="8dp"
 
             android:layout_toRightOf="@+id/iv_rjator"
-            android:background="@drawable/rjatorckds"/>
+            app:queryBackground="@drawable/bg_text"/>
 
     </LinearLayout>
 
