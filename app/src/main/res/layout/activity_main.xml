@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+ <TextView
+     android:id="@+id/tv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="캠핑 가자"
+     android:textSize="50sp"
+     android:gravity="center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_below="@+id/tv"
+        android:background="@drawable/tkwls"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/iv"
+            android:inputType="text"
+            android:text="sd"
+            app:iconifiedByDefault="true"
+            android:paddingLeft="8dp"
+
+            android:layout_toRightOf="@+id/iv_rjator"
+            app:queryBackground="@drawable/bg_text"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="#F0F0F0"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="캠핑장"
+            android:paddingRight="16dp"
+            android:onClick="Camping"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음식점"
+            android:onClick="restaurant"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="용품점"
+            android:onClick="SuppliesStore"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주차장"
+            android:onClick="parkingLot"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

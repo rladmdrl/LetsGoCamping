@@ -2,18 +2,40 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.rotorldi1541.letsgocamping">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".KakaApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_item"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/icon_item_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsGoCamping">
-        <activity android:name=".MainActivity">
+        <activity android:name=".PostActivityt" />
+        <activity android:name=".PassdActivity" />
+        <activity android:name=".ghldnjsActivity" />
+        <activity android:name=".FindIdPasswordActivity" />
+        <activity android:name=".idFdActivity" />
+        <activity android:name=".IogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakaobf854dfe7fc7995bac8d4b9687096e55" />
             </intent-filter>
         </activity>
     </application>

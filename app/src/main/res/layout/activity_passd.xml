@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PassdActivity">
+
+    <TextView
+        android:id="@+id/tv_passd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 재설정"
+        android:textStyle="bold"
+        android:textSize="44dp"
+        android:gravity="center"
+        android:layout_marginTop="200dp"/>
+    <TextView
+        android:id="@+id/tv_passd2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_passd1"
+        android:text="비밀번호"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/tv_passd3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_passd2"
+        android:text="비밀번호"
+        android:textSize="24sp"
+        android:layout_marginTop="60dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_text"
+        android:layout_below="@+id/tv_passd1"
+        android:layout_toRightOf="@id/tv_passd2"
+        android:layout_marginTop="52dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_text"
+        android:layout_below="@+id/tv_passd2"
+        android:layout_toRightOf="@id/tv_passd2"
+        android:layout_marginTop="52dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:text="확인"
+        android:onClick="fhrmdls"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67058137167",
+    "project_id": "let-s-go-camping",
+    "storage_bucket": "let-s-go-camping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67058137167:android:91f6124456b4ba20e0123a",
+        "android_client_info": {
+          "package_name": "com.gmail.rotorldi1541.letsgocamping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67058137167-5id8muta6300r4vn027nv081pe6r3h86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIFS-aSHznSBNG2H8YwazDSIRRRsKx2UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67058137167-5id8muta6300r4vn027nv081pe6r3h86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
