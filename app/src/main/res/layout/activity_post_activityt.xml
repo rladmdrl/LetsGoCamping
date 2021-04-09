@@ -28,40 +28,14 @@
     <TextView
         android:id="@+id/tv_information"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_below="@id/tv_title"
         android:background="@drawable/bg_text"
         android:paddingLeft="8dp"
         android:paddingTop="20dp"
-        android:paddingBottom="8dp"
         android:text="Information"
         android:textSize="16sp"
         android:textStyle="bold" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_chatting"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_below="@id/tv_information"
-         />
-    <EditText
-        android:id="@+id/et_chatting"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_below="@id/rv_chatting"
-        android:layout_alignParentBottom="true"
-        android:hint="댓글창"
-        android:paddingLeft="16dp"
-        android:background="@drawable/bg_text"/>
-    <ImageButton
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/rv_chatting"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/ic_baseline_send_24"
-        android:onClick="clianMag"/>
-
-
 
 
 
